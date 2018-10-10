@@ -23,7 +23,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_18_when_a_equal_20_and_b_equal_2() {
+  public void testSub() {
     // given
     int a = 20;
     int b = 2;
@@ -36,7 +36,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_6_when_a_equal_3_and_b_equal_2() {
+  public void testMulti() {
     // given
     int a = 3;
     int b = 2;
@@ -49,7 +49,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_5_when_a_equal_10_and_b_equal_2() {
+  public void testDiv() {
     // given
     int a = 10;
     int b = 2;
@@ -62,7 +62,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_1_when_arg_is_1() {
+  public void testSwitchCase_1() {
     // given
     int a = 1;
 
@@ -74,7 +74,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_2_when_arg_is_2() {
+  public void testSwitchCase_2() {
     // given
     int a = 2;
 
@@ -86,7 +86,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_3_when_arg_is_3() {
+  public void testSwitchCase_3() {
     // given
     int a = 3;
 
@@ -98,7 +98,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void should_get_4_when_arg_is_4() {
+  public void testSwitchCase_4() {
     // given
     int a = 4;
 
@@ -107,5 +107,17 @@ public class CalculatorTest {
 
     // then
     assertEquals(4, result);
+  }
+
+  @Test
+  public void testSqrt() {
+    // given
+    double a = 9D;
+
+    // when
+    final double result = calculator.sqrt(a);
+
+    // then
+    assertEquals(3D, result);
   }
 }
