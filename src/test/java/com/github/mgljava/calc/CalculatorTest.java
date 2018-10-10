@@ -1,15 +1,16 @@
 package com.github.mgljava.calc;
 
-import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
   private Calculator calculator = new Calculator();
 
   @Test
-  public void should_get_30_when_a_equal_20_and_b_equal_10() {
+  public void testAdd() {
     // given
     int a = 10;
     int b = 20;
