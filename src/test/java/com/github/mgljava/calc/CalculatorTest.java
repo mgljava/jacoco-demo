@@ -6,10 +6,10 @@ import org.junit.Test;
 
 public class CalculatorTest {
 
-  Calculator calculator = new Calculator();
+  private Calculator calculator = new Calculator();
 
   @Test
-  public void testAdd() {
+  public void should_get_30_when_a_equal_20_and_b_equal_10() {
     // given
     int a = 10;
     int b = 20;
@@ -22,7 +22,7 @@ public class CalculatorTest {
   }
 
   @Test
-  public void testSub() {
+  public void should_get_18_when_a_equal_20_and_b_equal_2() {
     // given
     int a = 20;
     int b = 2;
@@ -35,16 +35,29 @@ public class CalculatorTest {
   }
 
   @Test
-  public void testMulit() {
+  public void should_get_6_when_a_equal_3_and_b_equal_2() {
     // given
     int a = 3;
     int b = 2;
 
     // when
-    final int multi = calculator.multi(a, b);
+    final int multiResult = calculator.multi(a, b);
 
     // then
-    assertEquals(6, multi);
+    assertEquals(6, multiResult);
+  }
+
+  @Test
+  public void should_get_5_when_a_equal_10_and_b_equal_2() {
+    // given
+    int a = 10;
+    int b = 2;
+
+    // when
+    final int divResult = calculator.div(a, b);
+
+    // then
+    assertEquals(5, divResult);
   }
 
   @Test
