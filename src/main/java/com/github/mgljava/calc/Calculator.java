@@ -22,10 +22,6 @@ public class Calculator {
     return Math.sqrt(a);
   }
   
-  public int test() {
-    return 1;
-  }
-
   public int switchCase(int a) {
     switch (a) {
       case 1:
